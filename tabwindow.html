@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ctrl-p search</title>
+    <script type="text/javascript" src="jQuery-2.0.3.js"></script>
+    <script type="text/javascript" src="fuse.min.js"></script>
+    <style>
+      html, body {
+        width: 800px;
+        height: 300px;
+        padding: 0px;
+        margin: 0px;
+        background-color: #444444;
+        color: #aaaa88;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        background-color: #bbb;
+        color: #fff;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+       
+      li {
+        display: block;
+        font: 100 15px/2 Helvetica, Verdana, sans-serif;
+        border-bottom: 1px solid #333;
+        padding: 4px;
+        padding-left: 30px;
+      }
+       
+      li:last-child {
+        border: none;
+      }
+       
+       
+      li:hover, li.selected {
+        background: #f6f6f6;
+      }
+
+      .tab {
+        background-color: #444444;
+      }
+
+      .history {
+        background-color: #446484;
+      }
+
+      .bookmark {
+        background-color: #5C5630;
+      }
+    </style>
+    <script src="tabwindow.js"></script>
+  </head>
+  <body>
+    <input type="text" id="searchFilter" placeholder="Search..." autofocus />
+    <ul id="searchResults"></ul>
+  </body>
+</html>
+
