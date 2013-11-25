@@ -6,49 +6,77 @@
     <script type="text/javascript" src="fuse.min.js"></script>
     <style>
       html, body {
-        width: 800px;
+        width: 600px;
         height: 300px;
-        padding: 0px;
+        padding: 3px;
         margin: 0px;
         background-color: #444444;
-        color: #aaaa88;
+        color: #c8c8c8;
       }
 
       input {
-        width: 100%;
-        padding: 10px;
-        background-color: #bbb;
-        color: #fff;
+        width: 590px;
+        padding: 0px;
+        margin: 0px;
+        height: 28px;
+        background-color: #e6e6e6;
+        color: black;
       }
 
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        margin-top: 5px;
         height: 300px;
+        width: 593px;
         overflow-y: scroll;
         overflow-x: hidden;
       }
        
+      ::-webkit-scrollbar {
+          width: 16px;
+      }
+       
+      ::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 10px 0px 20px rgba(15,15,15,1); 
+      }
+       
+      ::-webkit-scrollbar-thumb {
+        background-color: #404040;
+        border: 3px solid transparent;
+        border-radius: 9px;
+        background-clip: content-box;
+      }
+
       li {
         display: block;
-        font: 100 15px/2 Helvetica, Verdana, sans-serif;
-        border-bottom: 1px solid #333;
+        font: 100 12px/1.4 Helvetica, Verdana, sans-serif;
+        border-bottom: 2px groove rgba(120, 120, 120, .5);
         padding: 4px;
-        padding-left: 30px;
+        padding-left: 45px;
+      }
+
+      li span {
+        color: #eee;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      li:first-child {
+        border-top: 2px groove rgba(120, 120, 120, .5);
       }
        
       li:last-child {
         border: none;
       }
        
-       
-      li:hover, li.selected {
-        background: #f6f6f6;
+      li.selected {
+        background: #606060;
       }
 
       .tab {
-        background-color: #444444;
+        background-color: #404040;
       }
 
       .history {
